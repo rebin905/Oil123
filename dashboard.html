@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPTROL ACTIVE | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <header class="topbar">
+    <div class="brand-inline">
+      <div class="brand-mark small">CA</div>
+      <div>
+        <strong>CAPTROL ACTIVE</strong>
+        <small>Engine Oil Network</small>
+      </div>
+    </div>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome-card">
+      <div>
+        <p class="eyebrow">DASHBOARD</p>
+        <h1>Namaste, <span id="userName">User</span> 👋</h1>
+        <p class="muted">Your demo account is active.</p>
+      </div>
+      <span id="userRole" class="role-badge">CUSTOMER</span>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span class="stat-icon">🛢️</span>
+        <p>Orders</p>
+        <h2>0</h2>
+        <small>No orders yet</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon">📍</span>
+        <p>Nearby dealers</p>
+        <h2>--</h2>
+        <small>Coming soon</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon">🎁</span>
+        <p>Reward points</p>
+        <h2>0</h2>
+        <small>Start purchasing</small>
+      </article>
+    </section>
+
+    <section class="quick-grid">
+      <button class="action-card">
+        <span>🚚</span>
+        <strong>Fuel / Oil Delivery</strong>
+        <small>Coming soon</small>
+      </button>
+      <button class="action-card">
+        <span>🛍️</span>
+        <strong>Browse Engine Oils</strong>
+        <small>Coming soon</small>
+      </button>
+      <button class="action-card">
+        <span>🏪</span>
+        <strong>Find Nearby Dealer</strong>
+        <small>Coming soon</small>
+      </button>
+    </section>
+
+    <p class="demo-warning">
+      Demo mode: this login uses a fixed OTP and browser storage. Do not use it for real customer data or admin access.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

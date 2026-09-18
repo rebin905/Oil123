@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPTROL ACTIVE | Demo Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="brand-panel">
+      <div class="brand-mark">CA</div>
+      <p class="eyebrow">CAPTROL ACTIVE</p>
+      <h1>Engine oil service, made simple.</h1>
+      <p class="muted">Demo phone login for your bike engine-oil application.</p>
+      <div class="feature-list">
+        <span>✓ Phone-based interface</span>
+        <span>✓ Customer and distributor roles</span>
+        <span>✓ Mobile-first dashboard</span>
+      </div>
+    </section>
+
+    <section class="auth-card">
+      <div id="loginStep">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Login with phone</h2>
+        <p class="muted">Enter any 10-digit Indian mobile number.</p>
+
+        <label for="phone">Phone number</label>
+        <div class="phone-row">
+          <span>+91</span>
+          <input id="phone" type="tel" inputmode="numeric" maxlength="10"
+                 placeholder="9876543210" autocomplete="tel" />
+        </div>
+
+        <button id="sendOtpBtn" class="primary-btn">Send demo OTP</button>
+        <p class="hint">Demo OTP is <strong>123456</strong>. No SMS will be sent.</p>
+        <p id="loginMessage" class="message"></p>
+
+        <div class="switch-line">
+          New user? <button class="text-btn" id="showSignupBtn">Create account</button>
+        </div>
+      </div>
+
+      <div id="otpStep" class="hidden">
+        <p class="eyebrow">VERIFY NUMBER</p>
+        <h2>Enter OTP</h2>
+        <p class="muted">OTP sent to <strong id="phonePreview"></strong></p>
+
+        <label for="otp">6-digit OTP</label>
+        <input id="otp" class="full-input" type="text" inputmode="numeric"
+               maxlength="6" placeholder="123456" />
+
+        <button id="verifyOtpBtn" class="primary-btn">Verify OTP</button>
+        <button id="backPhoneBtn" class="secondary-btn">Change number</button>
+        <p id="otpMessage" class="message"></p>
+      </div>
+
+      <div id="signupStep" class="hidden">
+        <p class="eyebrow">CREATE ACCOUNT</p>
+        <h2>Join CAPTROL ACTIVE</h2>
+        <p class="muted">Create a demo customer or distributor account.</p>
+
+        <label for="fullName">Full name</label>
+        <input id="fullName" class="full-input" type="text" placeholder="Your full name" />
+
+        <label for="signupPhone">Phone number</label>
+        <div class="phone-row">
+          <span>+91</span>
+          <input id="signupPhone" type="tel" inputmode="numeric" maxlength="10"
+                 placeholder="9876543210" />
+        </div>
+
+        <label for="role">Account type</label>
+        <select id="role" class="full-input">
+          <option value="customer">Customer</option>
+          <option value="distributor">Distributor</option>
+        </select>
+
+        <button id="signupBtn" class="primary-btn">Create demo account</button>
+        <p id="signupMessage" class="message"></p>
+
+        <div class="switch-line">
+          Already registered? <button class="text-btn" id="showLoginBtn">Login</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
